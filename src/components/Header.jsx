@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
 
   const scrollToSection = (e, sectionId) => {
     e.preventDefault();
@@ -12,6 +14,7 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+
   const navLinks = [
     ['about-details', 'ABOUT'],
     ['problems', 'PROBLEM'],
@@ -21,11 +24,12 @@ const Header = () => {
     ['contact', 'CONTACT'],
   ];
 
+
   return (
     <>
-      <header className="flex justify-between items-center p-4 md:p-[20px_60px] relative z-[100] border-b border-[rgba(167,139,250,0.2)] bg-[rgba(3,0,20,0.9)] backdrop-blur-xl sticky top-0">
+      <header className="flex justify-between items-center p-4 md:p-[20px_60px] relative z-[100] border-b border-[rgba(167,139,250,0.05)] backdrop-blur-sm sticky top-0">
         <div className="flex items-center gap-3 md:gap-[15px]">
-          <div className="border border-[#a855f7] p-[6px_10px] md:p-[8px_12px] font-['Share_Tech_Mono'] text-[10px] md:text-xs leading-[1.3] text-[#c084fc] bg-gradient-to-br from-[rgba(168,85,247,0.2)] to-[rgba(244,114,182,0.1)] shadow-[0_0_20px_rgba(168,85,247,0.2)] cursor-pointer hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] transition-all"
+          <div className="border border-[#a855f7] p-[6px_10px] md:p-[8px_12px] font-['Share_Tech_Mono'] text-[10px] md:text-xs leading-[1.3] text-[#c084fc] bg-gradient-to-br from-[rgba(168,85,247,0.3)] to-[rgba(244,114,182,0.2)] shadow-[0_0_20px_rgba(168,85,247,0.2)] cursor-pointer hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] transition-all"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             HACK<br />FUTURE
           </div>
@@ -37,6 +41,7 @@ const Header = () => {
             </div>
           </div>
         </div>
+
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex gap-[25px]">
@@ -54,6 +59,7 @@ const Header = () => {
           ))}
         </nav>
 
+
         {/* Right side - affiliation + hamburger */}
         <div className="flex items-center gap-4">
           <div className="text-right font-['Share_Tech_Mono'] hidden md:block">
@@ -63,6 +69,7 @@ const Header = () => {
               IIIT DHARWAD
             </div>
           </div>
+
 
           {/* Mobile hamburger button */}
           <button
@@ -77,15 +84,16 @@ const Header = () => {
         </div>
       </header>
 
+
       {/* Mobile Navigation Menu */}
-      <div className={`lg:hidden fixed top-[60px] left-0 right-0 bg-[rgba(3,0,20,0.98)] backdrop-blur-xl border-b border-[rgba(167,139,250,0.2)] z-[99] transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+      <div className={`lg:hidden fixed top-[60px] left-0 right-0 backdrop-blur-sm border-b border-[rgba(167,139,250,0.05)] z-[99] transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
         <nav className="flex flex-col p-4 gap-1">
           {navLinks.map(([id, text]) => (
             <a
               key={id}
               href={`#${id}`}
               onClick={(e) => scrollToSection(e, id)}
-              className="font-['Share_Tech_Mono'] text-[14px] tracking-[2px] text-[rgba(255,255,255,0.7)] hover:text-[#c084fc] transition-all duration-300 py-3 px-4 border-b border-[rgba(167,139,250,0.1)] hover:bg-[rgba(168,85,247,0.1)] rounded"
+              className="font-['Share_Tech_Mono'] text-[14px] tracking-[2px] text-[rgba(255,255,255,0.7)] hover:text-[#c084fc] transition-all duration-300 py-3 px-4 border-b border-[rgba(167,139,250,0.1)] hover:bg-[rgba(168,85,247,0.2)] rounded"
             >
               <span className="text-[#a855f7] mr-2">✧</span>
               {text}
@@ -101,5 +109,6 @@ const Header = () => {
     </>
   );
 };
+
 
 export default Header;

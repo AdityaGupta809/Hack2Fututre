@@ -17,36 +17,27 @@ const AboutSection = () => (
             </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-[30px] md:gap-[60px] relative z-10">
-            {/* Main About Content */}
-            <div className="space-glass p-[25px] md:p-[40px] rounded-xl relative overflow-hidden hover:shadow-[0_0_40px_rgba(168,85,247,0.2)] transition-all duration-300 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-gradient-to-r before:from-transparent before:via-[#a855f7] before:to-transparent">
-                {/* Corner accents */}
-                <div className="absolute top-0 left-0 w-[20px] md:w-[30px] h-[20px] md:h-[30px] border-l-2 border-t-2 border-[#a855f7] opacity-50"></div>
-                <div className="absolute top-0 right-0 w-[20px] md:w-[30px] h-[20px] md:h-[30px] border-r-2 border-t-2 border-[#f472b6] opacity-50"></div>
-                <div className="absolute bottom-0 left-0 w-[20px] md:w-[30px] h-[20px] md:h-[30px] border-l-2 border-b-2 border-[#f472b6] opacity-50"></div>
-                <div className="absolute bottom-0 right-0 w-[20px] md:w-[30px] h-[20px] md:h-[30px] border-r-2 border-b-2 border-[#a855f7] opacity-50"></div>
 
-                <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-                    <div className="w-[40px] md:w-[50px] h-[40px] md:h-[50px] border border-[rgba(168,85,247,0.4)] flex items-center justify-center text-[#c084fc] text-[20px] md:text-[24px] bg-gradient-to-br from-[rgba(168,85,247,0.2)] to-[rgba(244,114,182,0.1)] rounded-xl">🚀</div>
-                    <h3 className="font-['Orbitron'] text-[16px] md:text-[20px] font-semibold tracking-[1px] md:tracking-[2px]">THE MISSION</h3>
-                </div>
+        {/* Main About Content */}
+        <div className="space-glass p-[25px] md:p-[40px] rounded-xl relative overflow-hidden hover:shadow-[0_0_40px_rgba(168,85,247,0.2)] transition-all duration-300 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-gradient-to-r before:from-transparent before:via-[#a855f7] before:to-transparent">
+            {/* Corner accents */}
+            <div className="absolute top-0 left-0 w-[20px] md:w-[30px] h-[20px] md:h-[30px] border-l-2 border-t-2 border-[#a855f7] opacity-50"></div>
+            <div className="absolute top-0 right-0 w-[20px] md:w-[30px] h-[20px] md:h-[30px] border-r-2 border-t-2 border-[#f472b6] opacity-50"></div>
+            <div className="absolute bottom-0 left-0 w-[20px] md:w-[30px] h-[20px] md:h-[30px] border-l-2 border-b-2 border-[#f472b6] opacity-50"></div>
+            <div className="absolute bottom-0 right-0 w-[20px] md:w-[30px] h-[20px] md:h-[30px] border-r-2 border-b-2 border-[#a855f7] opacity-50"></div>
 
-                <p className="text-[13px] md:text-[15px] leading-[1.8] md:leading-[1.9] text-[rgba(255,255,255,0.7)] mb-4 md:mb-6">
-                    <span className="text-[#c084fc] font-semibold">HACK2FUTURE 2.0</span> is a flagship 36-hour hackathon organized by IIIT Dharwad, bringing together the brightest minds to innovate, create, and shape the future of technology.
-                </p>
 
-                <p className="text-[13px] md:text-[15px] leading-[1.8] md:leading-[1.9] text-[rgba(255,255,255,0.6)]">
-                    Our mission is to provide a platform where students can transform their ideas into reality, collaborate with peers across disciplines, and tackle real-world challenges with cutting-edge solutions.
-                </p>
-            </div>
 
-            {/* Features Grid */}
-            <div className="grid grid-cols-2 gap-3 md:gap-4">
-                <FeatureCard icon="💡" title="INNOVATION" desc="Push boundaries with breakthrough ideas" />
-                <FeatureCard icon="🤝" title="COLLABORATION" desc="Connect with like-minded innovators" />
-                <FeatureCard icon="🏆" title="COMPETITION" desc="Compete for exciting prizes" />
-                <FeatureCard icon="📚" title="LEARNING" desc="Gain hands-on experience" />
-            </div>
+            <h3 className="font-['Orbitron'] text-[16px] md:text-[20px] font-semibold tracking-[1px] md:tracking-[2px] text-center mb-6">THE MISSION</h3>
+
+
+            <p className="text-[13px] md:text-[15px] leading-[1.8] md:leading-[1.9] text-[rgba(255,255,255,0.7)] mb-4 md:mb-6 text-center">
+                <span className="text-[#c084fc] font-semibold">HACK2FUTURE 2.0</span> is a flagship 36-hour hackathon organized by IIIT Dharwad, bringing together the brightest minds to innovate, create, and shape the future of technology.
+            </p>
+
+            <p className="text-[13px] md:text-[15px] leading-[1.8] md:leading-[1.9] text-[rgba(255,255,255,0.6)] text-center">
+                Our mission is to provide a platform where students can transform their ideas into reality, collaborate with peers across disciplines, and tackle real-world challenges with cutting-edge solutions.
+            </p>
         </div>
 
         {/* Timeline/Event Details */}
