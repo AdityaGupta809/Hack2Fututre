@@ -25,13 +25,6 @@ const Hero = () => {
                 <p className="text-base sm:text-lg md:text-2xl text-white font-medium tracking-wide pt-4 md:pt-6 font-inter">
                     Hack the present, shape the Future
                 </p>
-
-                <div className="pt-6 md:pt-10">
-                    <button className="bg-[#2563EB] hover:bg-blue-600 text-white px-6 py-3 md:px-10 md:py-4 rounded-xl flex items-center gap-3 font-bold text-base md:text-lg transition-all duration-300 shadow-xl shadow-blue-600/20 active:scale-[0.97] group mx-auto md:mx-0">
-                        Explore Events
-                        <span className="text-xl md:text-2xl transition-transform duration-300 group-hover:translate-x-1">→</span>
-                    </button>
-                </div>
             </div>
         </main>
     )
