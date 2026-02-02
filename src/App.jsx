@@ -16,7 +16,7 @@ function App() {
       <img
         src="/earth.jpg"
         alt="Earth"
-        className="fixed -bottom-10 -left-20 w-[100%] md:w-[85%] lg:w-[110%] z-[1] pointer-events-none select-none max-w-none origin-bottom-left"
+        className="fixed -bottom-10 -left-20 w-[115%] md:w-[115%] lg:w-[110%] z-[1] pointer-events-none select-none max-w-none origin-bottom-left"
       />
 
       {/* Top Header / Navigation */}
