@@ -17,7 +17,12 @@ const Navbar = () => {
         const observerCallback = (entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    setActiveSection(entry.target.id);
+                    // Clear active section when hero is visible
+                    if (entry.target.id === 'hero') {
+                        setActiveSection('');
+                    } else {
+                        setActiveSection(entry.target.id);
+                    }
                 }
             });
         };
@@ -41,11 +46,11 @@ const Navbar = () => {
             {/* Mobile Header - Logo and Menu Button */}
             <header className="md:hidden fixed top-0 left-0 right-0 z-50 flex items-center justify-between pt-4 px-4 bg-black/60 backdrop-blur-xl border-b border-white/5">
                 {/* Logo */}
-                <div className="bg-black rounded-full p-[2px] border border-white/10 shadow-xl">
+                <a href="#hero" className="bg-black rounded-full p-[2px] border border-white/10 shadow-xl cursor-pointer hover:border-white/20 transition-all duration-300">
                     <div className="bg-zinc-950 rounded-full p-2">
                         <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain" />
                     </div>
-                </div>
+                </a>
 
                 {/* Mobile Menu Button */}
                 <button
@@ -67,13 +72,13 @@ const Navbar = () => {
             {/* Desktop Header */}
             <header className="hidden md:flex fixed top-0 left-0 right-0 z-50 items-center justify-center pt-6 px-10">
                 {/* Logo - Desktop */}
-                <div className="fixed left-10 top-6">
+                <a href="#hero" className="fixed left-10 top-6 cursor-pointer">
                     <div className="bg-black rounded-full p-[3px] border border-white/10 shadow-xl hover:border-white/20 transition-all duration-300">
                         <div className="bg-zinc-950 rounded-full p-2.5">
                             <img src="/logo.png" alt="Logo" className="w-14 h-14 object-contain" />
                         </div>
                     </div>
-                </div>
+                </a>
 
                 {/* Desktop Navigation Pill */}
                 <nav className="flex items-center bg-black/60 backdrop-blur-xl px-2 py-2.5 rounded-full border border-white/10 shadow-2xl hover:border-white/15 transition-colors duration-300">

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <main className="relative z-30 flex flex-col items-center md:items-start justify-center min-h-screen pt-20 px-6 md:pl-32 md:pr-6">
+        <main id="hero" className="relative z-30 flex flex-col items-center md:items-start justify-center min-h-screen pt-20 px-6 md:pl-32 md:pr-6">
             {/* Astronaut - Mobile: above text, Desktop: right side centered */}
             <div className="relative md:absolute md:top-1/2 md:right-[5%] lg:right-[10%] md:-translate-y-1/2 w-[60%] sm:w-[50%] md:w-[35%] lg:w-[40%] mb-8 md:mb-0">
                 <img
