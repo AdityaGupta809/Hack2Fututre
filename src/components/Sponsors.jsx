@@ -2,9 +2,9 @@ import React from 'react'
 
 const Sponsors = () => {
     const sponsors = [
-        { name: 'Cyseck', logo: '/cyseck_logo.avif' },
-        { name: 'IIITD Research Park', logo: '/iiitd_research_park_logo.png' },
-        { name: 'KDEM', logo: '/kdem_logo.png' }
+        { name: 'Cyseck', logo: '/sponsors/cyseck_logo.avif' },
+        { name: 'IIITD Research Park', logo: '/sponsors/iiitd_research_park_logo.png' },
+        { name: 'KDEM', logo: '/sponsors/kdem_logo.png' }
     ]
 
     return (
