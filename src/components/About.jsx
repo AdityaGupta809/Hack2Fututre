@@ -10,11 +10,8 @@ const About = () => {
             <div className="max-w-6xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-10 md:mb-16">
-                    <span className="inline-block px-3 py-1 sm:px-4 sm:py-1.5 bg-white/5 border border-white/10 rounded-full text-[#2DD4BF] text-xs sm:text-sm font-medium tracking-wider mb-4">
-                        ABOUT THE EVENT
-                    </span>
-                    <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold font-space tracking-tight">
-                        What is <span className="text-[#2563EB]">Hack2Future</span>?
+                    <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight section-heading">
+                        WHAT IS HACK2FUTURE?
                     </h2>
                 </div>
 

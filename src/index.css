@@ -3,6 +3,13 @@
 @theme {
     --font-inter: "Inter", sans-serif;
     --font-space: "Space Grotesk", sans-serif;
+    --font-orbitron: "Orbitron", sans-serif;
+}
+
+/* Section Heading Style - using Orbitron (zentry-like font) */
+.section-heading {
+    font-family: var(--font-orbitron);
+    color: white;
 }
 
 * {

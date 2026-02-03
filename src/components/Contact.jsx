@@ -28,11 +28,8 @@ const Contact = () => {
             <div className="max-w-6xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-10 md:mb-16">
-                    <span className="inline-block px-3 py-1 sm:px-4 sm:py-1.5 bg-white/5 border border-white/10 rounded-full text-[#2DD4BF] text-xs sm:text-sm font-medium tracking-wider mb-4">
-                        GET IN TOUCH
-                    </span>
-                    <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold font-space tracking-tight">
-                        Contact <span className="text-[#2563EB]">Us</span>
+                    <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight section-heading">
+                        CONTACT US
                     </h2>
                     <p className="text-white/60 mt-3 md:mt-4 max-w-xl mx-auto text-sm sm:text-base px-4">
                         Have questions? Reach out to us through any of the channels below.
